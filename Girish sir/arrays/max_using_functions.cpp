@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+void f(int a[],int n)
+{
+    int max=a[0];
+    for (int i=1;i<n;i++)
+    {
+        if (a[i]>max)
+        max=a[i];
+    }
+    cout<<max;
+}
+int main()
+{
+    int n,i;
+    cin>>n;
+    int a[n];
+    for (i=0;i<n;i++)
+    cin>>a[i];
+    f(a,n);
+    return 0;
+}
